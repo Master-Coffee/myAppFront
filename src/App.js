@@ -1,9 +1,16 @@
 
+// 3rd Packages 
+import { useRoutes } from "react-router-dom";
+
+// Local
+import routes from "./routes";
+
+
 function App() {
-  return (
-    <div className="App">
-      working ?
-    </div>
+  const content = useRoutes(routes);
+ 
+  return(
+    <div>{content}</div>
   );
 }
 
