@@ -4,13 +4,16 @@ import { useRoutes } from "react-router-dom";
 
 // Local
 import routes from "./routes";
+import { SidebarProvider } from "./contexts/SidebarContext";
 
 
 function App() {
   const content = useRoutes(routes);
  
   return(
-    <div>{content}</div>
+    <SidebarProvider>
+      {content}
+    </SidebarProvider>
   );
 }
 
