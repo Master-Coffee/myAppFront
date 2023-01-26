@@ -7,6 +7,8 @@ import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 //Local
 import useSidebar from '../hooks/useSidebar';
 import {SIDEBAR_BEHAVIOR} from "../constants";
+import useWindowSize from '../hooks/useWindowSize';
+
 
 
 const sidebarBehaviorOptions = [
@@ -24,10 +26,12 @@ const sidebarBehaviorOptions = [
   },
 ];
 
+
+
 const Blank = () => {
-
   const {behavior, setBehavior } = useSidebar();
-
+  const [width, height] = useWindowSize();
+  
   return (
     <>
       <Card>
@@ -56,6 +60,10 @@ const Blank = () => {
                 <div className="settings-button">{name}</div>
               </label>
             ))}
+          </div>
+            <span> Window size: {width} x {height}</span>;
+          <div>
+
           </div>
         </Card.Body>
       </Card>
