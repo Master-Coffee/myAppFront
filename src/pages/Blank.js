@@ -30,7 +30,7 @@ const sidebarBehaviorOptions = [
 
 const Blank = () => {
   const {behavior, setBehavior } = useSidebar();
-  const [width, height] = useWindowSize();
+  const size = useWindowSize();
   
   return (
     <>
@@ -61,10 +61,7 @@ const Blank = () => {
               </label>
             ))}
           </div>
-            <span> Window size: {width} x {height}</span>;
-          <div>
-
-          </div>
+          <span> Window size:{size}</span>;
         </Card.Body>
       </Card>
     </>

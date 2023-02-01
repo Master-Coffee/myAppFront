@@ -15665,7 +15665,7 @@ body[data-sidebar-behavior=compact]:not([data-sidebar-position=right]) .sidebar.
 }
 @media (min-width: 1px) and (max-width: 991.98px) {
   body[data-sidebar-behavior=compact]:not([data-sidebar-position=right]) .sidebar {
-    margin-left: 0;
+    margin-left: -68px;
   }
   body[data-sidebar-behavior=compact]:not([data-sidebar-position=right]) .sidebar.collapsed {
     margin-left: 0;
@@ -15683,7 +15683,7 @@ body[data-sidebar-behavior=compact][data-sidebar-position=right] .sidebar.collap
 }
 @media (min-width: 1px) and (max-width: 991.98px) {
   body[data-sidebar-behavior=compact][data-sidebar-position=right] .sidebar {
-    margin-right: 0; 
+    margin-right: -68px;
   }
   body[data-sidebar-behavior=compact][data-sidebar-position=right] .sidebar.collapsed {
     margin-right: 0;
